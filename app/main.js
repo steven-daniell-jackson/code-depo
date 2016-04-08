@@ -1,0 +1,1 @@
+angular.module('codeDepo', ['app.routes', 'app.directives'])
