@@ -15,23 +15,23 @@ angular.module('app.routes', ['ngRoute'])
   })
    .when('/cscart', {
     templateUrl: 'app/templates/code.html',
-    controller: 'mainCtrl',
+    controller: 'codeCtrl',
   })
    .when('/html', {
     templateUrl: 'app/templates/code.html',
-    controller: 'mainCtrl',
+    controller: 'codeCtrl',
   })
    .when('/css', {
     templateUrl: 'app/templates/code.html',
-    controller: 'mainCtrl',
+    controller: 'codeCtrl',
   })
    .when('/js', {
     templateUrl: 'app/templates/code.html',
-    controller: 'mainCtrl',
+    controller: 'codeCtrl',
   })
    .when('/php', {
     templateUrl: 'app/templates/code.html',
-    controller: 'mainCtrl',
+    controller: 'codeCtrl',
   })
    .when('/angular', {
     templateUrl: 'app/templates/code.html',
@@ -52,6 +52,10 @@ angular.module('app.routes', ['ngRoute'])
   .when('/about', {
     templateUrl: 'app/templates/about.html',
     controller: '',
+  })
+  .when('/demo', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
   })
   .otherwise({
         redirectTo: '/home'

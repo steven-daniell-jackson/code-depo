@@ -1,2 +1,17 @@
-code html
-{{entries}}
+<div ng-repeat="entry in entries">
+    
+  <div class="card col-md-3">
+  <div class="card-block">
+    <h4 class="card-title">{{entry.codeTitle}}</h4>
+    <h6 class="card-subtitle text-muted">{{entry.category | uppercase}}</h6>
+  </div>
+  <img ng-src="{{entry.codeImg}}" alt="Card image" ng-if="entry.codeImg">
+  <div class="card-block">
+    <p class="card-text">{{entry.codeDescription}}</p>
+    <a href="{{entry.codeSource}}" class="card-link">Source</a>
+    <a href="../demo/{{entry.codeDemo}}.html" class="card-link" ng-if="entry.codeDemo" target="_blank">Demo</a>
+  </div>
+</div>  
+    
+    
+</div>
