@@ -9,35 +9,43 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/home.html',
     controller: 'mainCtrl',
   })
-   .when('/wordpress', {
+   .when('/platform/wordpress', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/cscart', {
+   .when('/platform/cscart', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/html', {
+  .when('/templates/email', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/css', {
+   .when('/templates/landing', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/js', {
+   .when('/static/html', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/php', {
+   .when('/static/css', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/angular', {
+   .when('/static/js', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/bootstrap', {
+   .when('/static/php', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/static/angular', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/static/bootstrap', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
@@ -56,6 +64,10 @@ angular.module('app.routes', ['ngRoute'])
   .when('/demo', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
+  })
+   .when('/new-code-entry', {
+    templateUrl: 'app/templates/code-entry.html',
+    controller: 'codeAddCtrl',
   })
   .otherwise({
         redirectTo: '/home'
