@@ -26,6 +26,9 @@
          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
         
         <script src="../app/js/directives.js"></script>
+        <script src="../app/js/factory.js"></script>
+        <script src="../app/js/controllers.js"></script>
+        
         
         <script src="../app/main.js"></script>
         <script src="../app/routes.js"></script>
@@ -34,18 +37,21 @@
         
     </head>
     <body ng-app="codeDepo">
-        <base href="/">
+        <!--<base href="/">-->
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         {{2 + 2}}
         <navbar></navbar>
-        
+       <div class="container"> 
     <div ng-view></div>
 
   
     
-    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    </div> <!-- /container -->        
+    
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>

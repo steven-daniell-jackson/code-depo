@@ -1,1 +1,1 @@
-angular.module('codeDepo', ['app.routes', 'app.directives'])
+angular.module('codeDepo', ['app.routes', 'app.directives', 'app.factory', 'app.controllers'])
