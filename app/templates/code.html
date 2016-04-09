@@ -8,8 +8,8 @@
   <img ng-src="img/{{entry.codeImg}}.png" alt="Card image" ng-if="entry.codeImg" class="img-responsive">
   <div class="card-block">
     <p class="card-text">{{entry.codeDescription}}</p>
-    <a href="source/{{entry.codeSource}}.rar" class="card-link"  ng-if="entry.codeSource">Source</a>
-    <a href="demo/{{entry.codeDemo}}.html" class="card-link" ng-if="entry.codeDemo" target="_blank">Demo</a>
+    <a href="{{entry.codeSource}}" class="card-link"  ng-if="entry.codeSource" target="_blank">Source</a>
+    <a href="demo/{{entry.codeDemo}}/index.html" class="card-link" ng-if="entry.codeDemo" target="_blank">Demo</a>
   </div>
 </div>  
     
