@@ -1,0 +1,309 @@
+
+
+/* ==========================================================================
+   Steven Jackson's custom styles
+
+   Built by Steven Jackson
+   31 July 2015
+   ========================================================================== */
+
+
+body {
+  	padding-top: 0px; 
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #4f4f4f;
+}
+a:hover{
+    text-decoration: none;
+}
+
+.row {
+	margin-right:0px !important;
+}
+
+/*Header*/
+.jumbotron {
+background-repeat: no-repeat;
+	background-image: url("../img/header-img.png");
+	    background-position: center;
+    background-size: cover;
+        padding: 200px 0px 24px 0px;
+}
+
+.jumbotron h1{
+	padding:30px 10px;
+	font-weight: normal;
+font-size: 30px;
+color: #2a569b;
+}
+
+.jumbotron h1 span{
+font-weight: bold;
+}
+
+.jumbotron p{
+	font-size: 18px;
+	font-weight: normal;
+
+}
+
+.jumbotron p span{
+font-style: italic;
+font-weight: bold;
+}
+
+
+/*Form start*/
+form.enquiry-form {
+background-color: #f8c61e;
+padding: 15px 50px;
+margin: 0 auto; 
+width:380px;
+z-index: 999;
+
+}
+
+form.enquiry-form legend{
+margin: 0px;
+padding: 0px;
+}
+
+form.enquiry-form h3{
+color: #ffffff;
+    font-size: 28px;
+    margin: 0px 0px 15px 0px;
+    font-weight: bold;
+}
+
+form.enquiry-form input{
+	border-radius: 5px;
+	width: 100%;
+	height: 35px;
+	border: 1px #bbbbbb solid; 
+	padding: 10px;
+}
+
+form.enquiry-form input[type='submit']{
+border-radius: 10px;
+padding: 15px 30px 35px 30px;
+text-align: center;
+color:#fff;
+background-color: #7b7974;
+border: 0px;
+}
+
+form.enquiry-form input[name='address']{
+display: none;
+}
+
+form.enquiry-form label{
+margin-top: 10px;
+    margin-bottom: 5px;
+    color: #555555;
+    font-weight: bold;
+}
+
+
+form.enquiry-form .input-required{
+	    padding: 20px 0px;
+}
+
+
+form.enquiry-form span.thank-you {
+padding: 30px 0px;
+font-size: 30px;
+
+}
+    
+/*Form end*/
+
+
+/*End Header*/
+
+
+/*Body*/
+
+section.lead {
+
+}
+
+section.lead h3{
+	margin: 0px;
+	padding: 20px 0px 40px 0px;
+	font-size: 17px;
+	color: #4f4f4f;
+}
+
+
+section.lead ul{
+    list-style: none;
+    padding: 0px;
+}
+
+section.lead ul>li{
+font-size: 15px;
+padding: 20px 0px;
+background-color: #efcd6f;
+}
+
+
+li:nth-child(even){
+font-size: 15px;
+padding: 20px 0px;
+background-color: #fde9b2 !important;
+}
+
+
+
+section.membership {
+	background-color: #f9b700;
+	padding-bottom: 60px;
+}
+
+
+section.membership h3 {
+	padding: 44px 0px 15px 0px;
+	margin: 0px;
+	font-size: 17px;
+	color: #2a569b;
+}
+
+section.membership img {
+	
+}
+
+section.membership .img-wrapper {
+	display: inline-block;
+}
+
+/*End Body*/
+
+
+/*Footer*/
+
+footer section.row {
+height: 650px;
+background-position: center;
+    background-size: cover;
+	background-image: url("../img/footer-img.png");
+}
+
+
+.btn-blue {
+padding: 10px 30px;
+color:#fff;
+background-color: #3c85c0;
+margin: 0px 20px;
+
+}
+
+.btn-orange {
+padding: 10px 30px;
+color:#fff;
+background-color: #f9b700;
+margin: 0px 20px;
+}
+
+/*Form Start*/
+
+form.competition-form {
+}
+
+form.competition-form input[type='submit']{
+
+padding: 10px 30px;
+color:#fff;
+background-color: #3c85c0;
+margin: 0px 20px;
+}
+
+form.competition-form input[type='submit']:disabled{
+
+padding: 10px 30px;
+color:#fff;
+background-color: #000;
+margin: 0px 20px;
+}
+
+
+
+form.competition-form h3{
+font-size: 17px;
+}
+
+form.competition-form h3 span{
+color: #3c85c0;
+font-weight:bold;
+}
+
+form.competition-form h3 a{
+color: #3c85c0;
+font-weight:bold;
+}
+
+
+form.competition-form p{
+font-size: 14px;
+font-weight:bold;
+}
+
+
+legend {
+    display: block;
+    width: 100%;
+	padding: 60px 0px 10px 0px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: inherit;
+    color: #333;
+    border: 0;
+    border-bottom: 0px solid #e5e5e5;
+}
+
+input[type="radio"] {
+    background-color: #ddd;
+    background-image: -webkit-linear-gradient(0deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%),
+                      -webkit-linear-gradient(90deg, transparent 20%, hsla(0,0%,100%,.7), transparent 80%);
+    border-radius: 10px;
+    border: 1px solid #c3c3c3;
+    cursor: pointer;
+    display: inline-block;
+    height: 17px;
+    margin-right: 15px;
+    position: relative;
+    width: 17px;
+    -webkit-appearance: none;
+}
+input[type="radio"]:after {
+    
+    border-radius: 25px;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                0 1px 1px hsla(0,0%,100%,.8);
+    content: '';
+    display: block;
+    height: 7px;
+    left: 4px;
+    position: relative;
+    top: 4px;
+    width: 7px;
+}
+input[type="radio"]:checked:after {
+    background-color: #3c85c0;
+    box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.4),
+                inset 0 2px 2px hsla(0,0%,100%,.4),
+                0 1px 1px hsla(0,0%,100%,.8),
+                0 0 2px 2px hsla(0,70%,70%,.4);
+}
+
+/*Form end*/
+
+
+section.fine-print {
+	padding-top: 80px;
+	font-size: 13px;
+}
+
+
+
+/*End Footer*/
