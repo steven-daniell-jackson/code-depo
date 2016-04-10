@@ -1,15 +1,15 @@
 <div ng-repeat="entry in entries">
     
   <div class="card col-md-3">
-  <div class="card-block text-center">
+  <div class="card-block  text-center">
     <h4 class="card-title">{{entry.codeTitle}}</h4>
     <h6 class="card-subtitle text-muted">{{entry.subCategory | uppercase}}</h6>
   </div>
-  <img ng-src="img/{{entry.codeImg}}.png" alt="Card image" ng-if="entry.codeImg" class="img-responsive">
-  <div class="card-block">
+  <img ng-src="img/{{entry.codeImg}}.png" alt="Card image" ng-if="entry.codeImg" class="img-responsive card-img text-center">
+  <div class="card-block-btn">
     <p class="card-text">{{entry.codeDescription}}</p>
-    <a href="{{entry.codeSource}}" class="card-link"  ng-if="entry.codeSource" target="_blank">Source</a>
-    <a href="demo/{{entry.codeDemo}}/index.html" class="card-link" ng-if="entry.codeDemo" target="_blank">Demo</a>
+    <a href="{{entry.codeSource}}" class="card-link pull-left"  ng-if="entry.codeSource" target="_blank">Source</a>
+    <a href="demo/{{entry.codeDemo}}/index.html" class="card-link pull-right" ng-if="entry.codeDemo" target="_blank">Demo</a>
   </div>
 </div>  
     

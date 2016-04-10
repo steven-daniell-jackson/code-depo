@@ -25,6 +25,14 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
+   .when('/templates/angular', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/templates/environment', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
    .when('/static/html', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
@@ -53,9 +61,9 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/contact.html',
     controller: '',
   })
-   .when('/other', {
-    templateUrl: 'app/templates/other.html',
-    controller: '',
+   .when('/other/other', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeAddCtrl',
   })
   .when('/about', {
     templateUrl: 'app/templates/about.html',
