@@ -1,0 +1,253 @@
+@import url(http://fonts.googleapis.com/css?family=Carme);
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Carme', sans-serif;
+  background: #7f8c8d;
+  font-size: 16px;
+}
+.wrapper {
+  margin: 10px auto 105px;
+  width: 615px;
+}
+.wrapper h1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #2980b9;
+}
+.grid {
+  margin: 10px auto 105px;
+  width: 615px;
+}
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.grid .cell {
+  position: relative;
+  float: left;
+  margin: 10px;
+  transform: scale3d(1, 1, 1);
+}
+.grid .cell .inside {
+  position: absolute;
+  background: #34495e;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.grid .cell img {
+  position: relative;
+  display: block;
+}
+.grid .cell h2 {
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  color: #ecf0f1;
+}
+.grid .cell p {
+  text-align: center;
+  color: #bdc3c7;
+}
+.cell-xxx .inside {
+  display: none;
+}
+.cell-xxx:hover .inside {
+  display: block;
+}
+.cell-a .inside {
+  transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+  transform: translate(0px, 0px);
+  opacity: 0;
+}
+.cell-a .inside * {
+  transition: all 0.5s ease-in 0.1s;
+  transform: scale(1.5);
+}
+.cell-a:hover .inside {
+  transition: all .5s ease;
+  transform: translate(10px, 10px);
+  opacity: 1;
+}
+.cell-a:hover .inside * {
+  transform: scale(1);
+}
+.cell-b {
+  overflow: hidden;
+}
+.cell-b .inside {
+  transition: opacity 0.1s ease-in, transform 0.3s ease-in;
+  transform: rotate(90deg) scale(0.1);
+  transform-origin: 20% 100%;
+  opacity: 0;
+}
+.cell-b .inside * {
+  transition: all .6s ease .3S;
+  transform: rotate(25deg) translate(45px, 45px);
+  transform-origin: 50% 100%;
+}
+.cell-b:hover .inside {
+  transition: all 0.5s ease-in;
+  transform: rotate(0deg) scale(1);
+  opacity: 1;
+}
+.cell-b:hover .inside * {
+  transform: rotate(0deg) translate(0px, 0px);
+}
+.cell-c .inside {
+  transition: opacity 0.4s ease-in, transform 0.3s ease-in;
+  transform: scale(1.3);
+  opacity: 0;
+}
+.cell-c .inside * {
+  transition: all .6s ease;
+  transform: translate(0px, 35px);
+}
+.cell-c:hover .inside {
+  transform: scale(1);
+  opacity: 1;
+}
+.cell-c:hover .inside * {
+  transform: translate(0px, 0px);
+}
+.cell-c:hover .inside h2 {
+  transition-delay: .1s;
+}
+.cell-c:hover .inside p {
+  transition-delay: .3s;
+}
+.cell-d {
+  overflow: hidden;
+}
+.cell-d .inside {
+  overflow: hidden;
+  transition: transform .6s ease;
+  transform: translate(-185px, 0%);
+}
+.cell-d .inside * {
+  transition: all .6s ease;
+  transform: translate(185px, 0%);
+}
+.cell-d:hover .inside {
+  display: block;
+  transform: translate(0px, 0%);
+}
+.cell-d:hover .inside * {
+  transform: translate(0px, 0px);
+}
+.cell-d:hover .inside h2 {
+  transition-delay: .1s;
+}
+.cell-d:hover .inside p {
+  transition-delay: .3s;
+}
+.cell-e {
+  overflow: hidden;
+}
+.cell-e .inside {
+  overflow: hidden;
+  transition: transform .6s ease;
+  transform: translate(0, -275px);
+}
+.cell-e .inside * {
+  transition: transform .6s ease;
+  transform: translate(-185px, 0%);
+}
+.cell-e:hover .inside {
+  display: block;
+  transform: translate(0px, 0%);
+}
+.cell-e:hover .inside * {
+  transform: translate(0px, 0px);
+}
+.cell-e:hover .inside h2 {
+  transition-delay: .3s;
+}
+.cell-e:hover .inside p {
+  transition-delay: .5s;
+}
+.cell-f {
+  perspective: 800;
+}
+.cell-f .inside {
+  overflow: hidden;
+  transition: transform 0.6s ease, opacity 0.2s ease-in;
+  transform-origin: 0% 100%;
+  transform: rotateX(-90deg) translate(-25px, -25px);
+  opacity: 0;
+}
+.cell-f .inside * {
+  transition: transform .6s ease;
+}
+.cell-f .inside h2 {
+  transform: translate(0, -20px);
+}
+.cell-f .inside p {
+  transform: translate(0, 20px);
+}
+.cell-f:hover .inside {
+  transform: rotateX(0deg) translate(0, 0);
+  opacity: 1;
+}
+.cell-f:hover .inside * {
+  transform: translate(0px, 0px);
+}
+.cell-f:hover .inside h2 {
+  transition-delay: .1s;
+}
+.cell-f:hover .inside p {
+  transition-delay: .3s;
+}
+.cell-g img {
+  transition: transform 0.3s ease-in;
+  transform: scale(1);
+}
+.cell-g .inside {
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  opacity: 0;
+}
+.cell-g .inside * {
+  transition: transform 0.3s ease-in;
+  transform: scale(1.3);
+}
+.cell-g:hover img {
+  transform: scale(0.9);
+}
+.cell-g:hover .inside {
+  opacity: 1;
+}
+.cell-g:hover .inside * {
+  transform: scale(1);
+}
+.cell-h {
+  perspective: 800;
+}
+.cell-h .inside {
+  overflow: hidden;
+  transition: transform 0.6s ease, opacity 0.2s ease-in;
+  transform-origin: 0% 0%;
+  transform: rotateY(-90deg);
+  opacity: 0;
+}
+.cell-h .inside * {
+  transition: transform .6s ease;
+  transform-origin: 100% 0%;
+  transform: scale(1.3);
+}
+.cell-h:hover .inside {
+  transform: rotateY(0deg) translate(0, 0);
+  opacity: 1;
+}
+.cell-h:hover .inside * {
+  transform: scale(1);
+}
+.cell-h:hover .inside h2 {
+  transition-delay: .1s;
+}
+.cell-h:hover .inside p {
+  transition-delay: .2s;
+}
