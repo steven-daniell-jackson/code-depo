@@ -9,6 +9,8 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/home.html',
     controller: 'mainCtrl',
   })
+  
+//   Platform
    .when('/platform/wordpress', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
@@ -17,6 +19,8 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
+  
+//   Templates
   .when('/templates/email', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
@@ -33,7 +37,8 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/static/html', {
+//   Snippets
+   .when('/static/components', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
@@ -57,13 +62,17 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-   .when('/contact', {
-    templateUrl: 'app/templates/contact.html',
-    controller: '',
-  })
+
+// Other
    .when('/other/other', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeAddCtrl',
+  })
+  
+//   Pages
+   .when('/contact', {
+    templateUrl: 'app/templates/contact.html',
+    controller: '',
   })
   .when('/about', {
     templateUrl: 'app/templates/about.html',

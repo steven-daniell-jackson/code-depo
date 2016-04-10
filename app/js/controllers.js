@@ -33,7 +33,7 @@ Code.all(Path.location())
 
 var platformOptions = {"Wordpress" : "wordpress", "CSCart": "cscart"};
 var templateOptions = {"Email" : "email", "Landing Page": "landing", "Angular" : "angular", "Environment" : "environment"};
-var staticmOptions = {"HTML" : "html", "CSS": "css", "JS": "js", "PHP": "php"};
+var staticOptions = {"COMPONENTS" : "components", "CSS": "css", "JS": "js", "PHP": "php"};
 var cheatsheetOptions = {"HTML" : "html", "CSS": "css", "JS": "js", "PHP": "php", "Angular": "angular"};
 var otherOptions = {"Other": "other"};
 
@@ -49,7 +49,7 @@ $scope.$watch('category', function (selected) {
         $scope.selectOptions = templateOptions;
         break;
         case 'static': 
-        $scope.selectOptions = staticmOptions;
+        $scope.selectOptions = staticOptions;
         break;
         case 'cheatsheet': 
         $scope.selectOptions = cheatsheetOptions;
