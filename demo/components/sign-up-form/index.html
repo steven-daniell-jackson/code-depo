@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link href="css/styles.css" rel="stylesheet">
+	</head>
+	<body>
+
+
+<div class="container">
+  <h1>
+    <span>Subscribe to</span><br>
+    Celery Facts Weekly!
+  </h1>
+  <section>
+    <label for="email" class="top-label">Email</label>
+    <input id="email" type="email" autocomplete="off">
+  </section>
+  <section>
+    <label class="top-label">How did you hear about us?</label>
+    
+    <input id="how-friend" name="how" type="radio">
+    <label for="how-friend" class="side-label">From a friend</label>
+
+    <input id="how-internet" name="how" type="radio">
+    <label for="how-internet" class="side-label">Somewhere on the internet</label>
+
+    <input id="how-other" name="how" type="radio">
+    <label for="how-other" class="side-label">Other...</label>
+    
+    <div class="how-other-disclosure">
+      <label for="how-other-explain" class="top-label">Please explain</label>
+      <textarea id="how-other-explain"></textarea>
+    </div>
+  </section>
+  <section>
+    <input id="permitted" type="checkbox">
+    <label for="permitted" class="side-label">I am legally permitted to submit forms</label>
+    <div class="blocked">(you have to check the checkbox to continue)</div>
+    <button>Submit</button>
+  </section>
+</div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>

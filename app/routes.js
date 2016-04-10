@@ -66,7 +66,7 @@ angular.module('app.routes', ['ngRoute'])
 // Other
    .when('/other/other', {
     templateUrl: 'app/templates/code.html',
-    controller: 'codeAddCtrl',
+    controller: 'codeCtrl',
   })
   
 //   Pages
