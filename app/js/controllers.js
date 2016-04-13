@@ -9,7 +9,7 @@ angular.module('app.controllers',['app.factory'])
 //   Code Controller
    .controller('codeCtrl', ['$scope', 'Code', 'Path', function($scope, Code, Path){
       
-      $scope.test = "code Ctrl";
+      $scope.preloader = true;
   
 // Access factory and assign the returned data
 Code.all(Path.location())
@@ -17,6 +17,7 @@ Code.all(Path.location())
     
             $scope.entries = data;
             $scope.preloader = false;
+            $scope.path = Path.location();
            $scope.message = data.message;
         })
         .error(function(data) {
