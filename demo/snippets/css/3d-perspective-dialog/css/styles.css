@@ -1,0 +1,81 @@
+body {
+  margin: 4em;
+  background: #f7f7f7;
+  font-family: Lato;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+a, button {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+#panel {
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  -webkit-transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+  transform: translate(-50%, -50%) rotateY(0deg) rotateX(0deg) rotateZ(0deg);
+}
+#panel #panel-inner {
+  background: #fff;
+  box-shadow: 0 20px 100px rgba(0, 0, 0, 0.2);
+  padding: 3em;
+  border-radius: 16px;
+}
+#panel #panel-inner .panel-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3em;
+  line-height: 3em;
+  text-align: center;
+  border-radius: 0 16px 0 16px;
+  color: #aaa;
+}
+#panel #panel-inner .panel-close svg {
+  pointer-events: none;
+}
+#panel #panel-inner .panel-close:hover {
+  background: #f7f7f7;
+}
+#panel footer {
+  margin: 2.5em -3em -3em -3em;
+  overflow: hidden;
+}
+#panel footer button {
+  display: block;
+  width: 50%;
+  padding: 1.5em 1em;
+  float: left;
+  background: #fff;
+  border: none;
+  border-top: 1px solid #eee;
+  color: #888;
+  outline: none;
+}
+#panel footer button.border-radius-left {
+  border-radius: 0 0 0 16px;
+}
+#panel footer button.border-radius-right {
+  border-radius: 0 0 16px 0;
+}
+#panel footer button:hover {
+  background: #eee;
+}
