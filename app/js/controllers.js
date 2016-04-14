@@ -34,7 +34,7 @@ Code.all(Path.location())
 
 var platformOptions = {"Wordpress" : "wordpress", "CSCart": "cscart"};
 var templateOptions = {"Email" : "email", "Landing Page": "landing", "Angular" : "angular", "Environment" : "environment"};
-var staticOptions = {"COMPONENTS" : "components", "CSS": "css", "JS": "js", "PHP": "php"};
+var staticOptions = {"COMPONENTS" : "components", "CSS": "css", "JS": "js", "PHP": "php", "JQUERY": "jquery"};
 var cheatsheetOptions = {"HTML" : "html", "CSS": "css", "JS": "js", "JQUERY": "jquery",  "PHP": "php", "Angular": "angular", "SSH": "ssh", "HTACCESS": "htaccess", };
 var otherOptions = {"Other": "other"};
 
