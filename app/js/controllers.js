@@ -3,6 +3,14 @@ angular.module('app.controllers',['app.factory'])
 // Main Controller
   .controller('mainCtrl', ['$scope', 'Code', 'Path', function($scope, Code, Path){
 
+$scope.panel = {
+  platform : "Platform",
+  templates: "Templates",
+  snippets: "Snippets",
+  cheatsheet : "Cheatsheet",
+  other : "Other"
+  
+}
   
   }])
   
