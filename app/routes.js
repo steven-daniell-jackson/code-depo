@@ -50,6 +50,10 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
+  .when('/static/jquery', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
    .when('/static/php', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
@@ -62,7 +66,40 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-
+  
+  //   Cheatsheet
+   .when('/cheatsheet/html', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/cheatsheet/css', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/cheatsheet/js', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/jquery', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/cheatsheet/php', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/cheatsheet/angular', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+   .when('/cheatsheet/htaccess', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+.when('/cheatsheet/ssh', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
 // Other
    .when('/other/other', {
     templateUrl: 'app/templates/code.html',
