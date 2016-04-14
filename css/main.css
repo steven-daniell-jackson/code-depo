@@ -5,7 +5,7 @@
    ========================================================================== */
 .card {margin: 20px 0 0 0; border: 1px solid #c3c3c3; padding: 20px 10px;}
 .card-title {font-size: 16px;}
-.card-text {height: 50px; margin-top: 10px; text-align: center;}
+.card-text {height: 50px; margin-top: 10px; text-align: center; line-height: 18px;}
 .card-block {margin-top: 10px;}
 .card-block-btn {margin-top: 10px; padding: 0px 15px;}
 .card-link {background-color: #000; color: #fff; padding: 5px 20px; border: 1px solid #000;}
