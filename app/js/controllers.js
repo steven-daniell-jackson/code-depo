@@ -3,14 +3,6 @@ angular.module('app.controllers',['app.factory'])
 // Main Controller
   .controller('mainCtrl', ['$scope', 'Code', 'Path', function($scope, Code, Path){
 
-$scope.panel = {
-  platform : "Platform",
-  templates: "Templates",
-  snippets: "Snippets",
-  cheatsheet : "Cheatsheet",
-  other : "Other"
-  
-}
   
   }])
   
@@ -43,7 +35,22 @@ Code.all(Path.location())
 var platformOptions = {"Wordpress" : "wordpress", "CSCart": "cscart"};
 var templateOptions = {"Email" : "email", "Landing Page": "landing", "Angular" : "angular", "Environment" : "environment"};
 var staticOptions = {"COMPONENTS" : "components", "CSS": "css", "JS": "js", "PHP": "php", "JQUERY": "jquery"};
-var cheatsheetOptions = {"HTML" : "html", "CSS": "css", "JS": "js", "JQUERY": "jquery",  "PHP": "php", "Angular": "angular", "SSH": "ssh", "HTACCESS": "htaccess", };
+var cheatsheetOptions = {
+  "HTML" : "html", 
+  "CSS": "css", 
+  "JS": "js", 
+  "JQUERY": "jquery",  
+  "PHP": "php", 
+  "Angular": "angular", 
+  "SSH": "ssh", 
+  "HTACCESS": "htaccess", 
+  "GIT": "git", 
+  "MYSQL": "mysql", 
+  "JAVA": "java", 
+  "SVN": "svn", 
+  "PYTHON": "python", 
+
+};
 var otherOptions = {"Other": "other"};
 
 

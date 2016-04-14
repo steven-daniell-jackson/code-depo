@@ -96,10 +96,35 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
-.when('/cheatsheet/ssh', {
+.when('/cheatsheet/git', {
     templateUrl: 'app/templates/code.html',
     controller: 'codeCtrl',
   })
+  .when('/cheatsheet/java', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/python', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/svn', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/mysql', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/ssh', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  .when('/cheatsheet/jquery', {
+    templateUrl: 'app/templates/code.html',
+    controller: 'codeCtrl',
+  })
+  
 // Other
    .when('/other/other', {
     templateUrl: 'app/templates/code.html',
