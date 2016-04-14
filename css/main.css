@@ -1,26 +1,27 @@
 
 
 /* ==========================================================================
-   Author's custom styles
+   Steven Jackson's custom styles
    ========================================================================== */
 .card {margin: 20px 0 0 0; border: 1px solid #c3c3c3; padding: 20px 10px;}
 .card-title {font-size: 16px;}
 .card-text {height: 50px; margin-top: 10px; text-align: center;}
 .card-block {margin-top: 10px;}
 .card-block-btn {margin-top: 10px; padding: 0px 15px;}
-.card-link {background-color: #000; color: #fff; padding: 5px 20px; }
+.card-link {background-color: #000; color: #fff; padding: 5px 20px; border: 1px solid #000;}
 .card-img {max-height: 300px;  margin: 0px auto;}
 .navbar {display: none;}
 .home-content {display: none;}
-
+.card-link:hover {
+color: #000 !important; 
+border: 1px solid #000;
+background: #fff;
+text-decoration: none;
+-webkit-transition: ease 1s;
+-moz-transition: ease 1s;
+transition: ease 1s;}
 
 /*Closing Door*/
-
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
