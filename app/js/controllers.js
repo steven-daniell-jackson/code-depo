@@ -6,6 +6,25 @@ angular.module('app.controllers',['app.factory'])
   
   }])
   
+  // Search Controller
+  .controller('searchCtrl', ['$scope', 'CodeMain' ,function($scope, CodeMain){
+
+  // Access factory and assign the returned data
+CodeMain.all()
+.success(function(data) {
+    
+            $scope.entries = data;
+            $scope.preloader = false;
+           $scope.message = data.message;
+        })
+        .error(function(data) {
+            console.log('Error: ' + data);
+        });
+
+  
+  
+  }])
+  
 //   Code Controller
    .controller('codeCtrl', ['$scope', 'Code', 'Path', function($scope, Code, Path){
       
@@ -30,7 +49,7 @@ Code.all(Path.location())
   }])
   
 // Add Code Entry Controller
-  .controller('codeAddCtrl', ['$scope', 'CodeCategory', function($scope, CodeCategory){
+  .controller('codeAddCtrl', ['$scope', 'CodeMain', function($scope, CodeMain){
 
 var platformOptions = {"Wordpress" : "wordpress", "CSCart": "cscart"};
 var templateOptions = {"Email" : "email", "Landing Page": "landing", "Angular" : "angular", "Environment" : "environment"};
@@ -99,7 +118,7 @@ var formData = {
 
 
 // Call factory and submit the formData for processing
-CodeCategory.create(formData)
+CodeMain.create(formData)
 
  // If successful print returned message from API else print error
  .success(function(data) {

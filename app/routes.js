@@ -136,6 +136,10 @@ angular.module('app.routes', ['ngRoute'])
     templateUrl: 'app/templates/contact.html',
     controller: '',
   })
+   .when('/search', {
+    templateUrl: 'app/templates/search.html',
+    controller: 'searchCtrl',
+  })
   .when('/about', {
     templateUrl: 'app/templates/about.html',
     controller: '',

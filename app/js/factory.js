@@ -15,7 +15,7 @@ angular.module('app.factory', [])
 
 })
 
-.factory('CodeCategory', function($http){
+.factory('CodeMain', function($http){
 
 	var codeFac = {};
 
@@ -28,7 +28,7 @@ angular.module('app.factory', [])
 
 // Create get factory to retrieve data from api
 	codeFac.all = function(){
-		return	$http.get('http://boiling-mesa-13925.herokuapp.com/api/code-category');
+		return	$http.get('http://boiling-mesa-13925.herokuapp.com/api/all-code-entries');
 	}
 
 	return	codeFac;

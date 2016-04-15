@@ -24,6 +24,7 @@ transition: ease 1s;}
 -webkit-transition: ease 0.25s;
 -moz-transition: ease 0.25s;
 transition: ease 0.25s}
+.card-link:focus {text-decoration: none; color: #fff;}
 .dropdown-menu>li>a:hover {margin: 0px; background-color: #000; color: #fff;}
 .dropdown-menu .divider {margin: 0;}
 .navbar-nav>li>.dropdown-menu {padding: 0;}
@@ -94,44 +95,6 @@ i.fa-bars {
   font-size: 28px;
   float: left;
 }
-
-/* Button styles */
-.btn {
-  box-sizing:border-box;
-   -moz-box-sizing:border-box;
-   -webkit-box-sizing:border-box;
-  
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
-  height: 50px;
-  
-  border-radius: 6px;
-  -moz-border-radius: 6px;
-  -webkit-border-radius: 6px;
-    
-  line-height: 50px;
-  padding: 0 30px;  
-  font-size: 14px;
-
-  -webkit-box-shadow: 0 3px 0 0 #e04338;
-  box-shadow: 0 3px 0 0 #e04338;
-  background-color: #ea5648;
-}
-  
-  .btn:active,
-  .btn.active {
-    top: 2px;
-    -webkit-box-shadow: 0 1px 0 0 #e04338;
-    box-shadow: 0 1px 0 0 #e04338;
-  }
-
-  .btn-small {
-    padding: 0 15px;
-    font-size: 10px;
-    height: 30px;
-    line-height: 30px;
-  }
 
 
 /* Closing Door Menu */
