@@ -1,0 +1,270 @@
+/*!
+* Start Bootstrap - Stylish Portfolio Bootstrap Theme (http://startbootstrap.com)
+* Code licensed under the Apache License v2.0.
+* For details, see http://www.apache.org/licenses/LICENSE-2.0.
+*/
+
+/* Global Styles */
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: 'Arial Black', arial;
+    line-height: 1.3em;
+    font-size: 28px;
+}
+
+h2.large {
+    font-size: 185%;
+    line-height: 1em;
+    margin-top: 0;
+    margin-bottom: 30px;
+    /*min-height: 100px;*/
+}
+
+a img {
+    -webkit-transition: all 100ms ease;
+    -moz-transition: all 100ms ease;
+    -ms-transition: all 100ms ease;
+    -o-transition: all 100ms ease;
+    transition: all 100ms ease;
+}
+
+a img:hover {
+    opacity: 0.8;
+}
+
+.text-vertical-center {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.text-vertical-center h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 4.5em;
+    font-weight: 700;
+}
+
+.blue-colour {
+    color: #0072bc;
+}
+
+.bg-white {
+    background-color: #ffffff;
+    border: 2px solid #0072bc;
+}
+
+.bg-blue {
+    background-color: #0072bc;
+}
+
+.yellow-colour {
+    color: #ffc20e;
+}
+
+.bg-yellow {
+    background-color: #ffc20e;
+}
+
+/*.shadow-font {
+    text-shadow: 0px 1px 2px rgba(100, 100, 100, 1);
+}*/
+
+.upper-me {
+    text-transform: uppercase;
+}
+
+/* Custom Button Styles */
+
+.btn-dark {
+    border-radius: 0;
+    color: #fff;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+    color: #fff;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.btn-light {
+    border-radius: 0;
+    color: #333;
+    background-color: rgb(255,255,255);
+}
+
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+    color: #333;
+    background-color: rgba(255,255,255,0.8);
+}
+
+/* Custom Horizontal Rule */
+
+hr.small {
+    max-width: 100px;
+}
+
+/* Header */
+
+.header {
+    display: table;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url(../img/bg.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.header .container {
+    display: table;
+    background-color: rgba(0,114,188,0.70);
+    max-width: 700px;
+    height: 100%;
+}
+
+.header .container .row {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.img-responsive.img-responsive-center {
+    margin: 0 auto;
+}
+
+/* Portfolio */
+
+.portfolio a {
+    color: #0072bc;
+}
+
+.portfolio a:hover {
+    opacity: 0.8;
+}
+
+.portfolio {
+    color: #0072bc;
+    margin-bottom: 70px;
+}
+
+.portfolio .col-lg-10.col-lg-offset-1 {
+    padding: 50px;
+}
+
+.portfolio table.info-table {
+    width: 303px;
+    font-size: 16px;
+    text-align: left;
+    margin: 30px auto;
+}
+
+@media (min-width: 1200px) {
+    .portfolio .container {width: 1000px;}
+}
+
+@media screen and (min-width: 990px) {
+    .portfolio .col-md-6:first-child {padding-right: 35px;}
+    .portfolio .col-md-6:last-child {padding-left: 35px;}
+    .portfolio .col-lg-10.col-lg-offset-1 {background-image: url(../img/blue-border.png); background-position: center top; background-repeat: repeat-y;}
+    .portfolio .table-holder {min-height: 280px;}
+}
+
+@media screen and (max-width: 990px) {
+    .portfolio .col-md-6:first-child {margin-bottom: 60px;}
+    .portfolio .col-lg-10.col-lg-offset-1 {border: 2px solid #0072bc; margin: 0 10px;}
+}
+
+
+
+@media screen and (max-width: 370px) {
+    .portfolio table.info-table {width: 100%;}
+}
+
+/* About */
+
+.about {
+    padding: 50px 0;
+}
+
+/* Services */
+
+.services {
+    padding: 50px 0;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+/* Callout */
+
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/callout.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+/* Call to Action */
+
+.call-to-action {
+    padding: 50px 0;
+}
+
+.call-to-action .btn {
+    margin: 10px;
+}
+
+/* Map */
+
+.map {
+    height: 500px;
+}
+
+@media(max-width:768px) {
+    .map {
+        height: 75%;
+    }
+}
+
+/* Footer */
+
+footer {
+    padding: 70px 0;
+    color: #ffffff;
+}
+
+footer a {
+    color: #cccccc;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+@media screen and (min-width: 990px) {
+    footer .col-first h3 {text-align: right; padding-right: 15px;}
+    footer .col-last h3 {text-align: left; padding-left: 15px;}
+}

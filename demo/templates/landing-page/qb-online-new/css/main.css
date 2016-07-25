@@ -1,0 +1,340 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+/* ==========================================================================
+   Steven Jackson's custom styles
+   ========================================================================== */
+
+/*Global*/
+body {
+    font-family: 'Lato', sans-serif;
+}
+.row {
+    margin-right: 0px; 
+     margin-left: 0px;     
+}
+
+
+/*Global end*/
+
+/*Header*/
+header { 
+  background: url(../img/banner.png) no-repeat;
+  background-size: cover;
+  }
+  
+  div.logo {
+      padding: 20px 0 0 20px;
+      }
+
+.form-wrapper {
+  float: right;
+  margin-top: 14%;
+  margin-bottom: 39%;
+  display: block;
+  max-width: 500px;
+
+  background: #f7f7f7;
+  padding: 20px;
+  -webkit-box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px -5px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.form-wrapper label {
+    font-weight: 400;
+}
+
+.form-wrapper h2 {
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+.form-wrapper .input {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 30px;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+}
+.form-wrapper .select {
+  width: 100%;
+  margin-bottom: 10px;
+  background: #fff;
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 30px;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #e7e7e7;
+}
+.form-wrapper .btn {
+  width: 100%;
+  background: #def590;
+  border-radius: 5px;
+  font-size: 18px;
+  color: #000;
+ margin-top: 10px;
+}
+.form-wrapper .btn:hover {
+  background: #FFAB33;
+}
+
+div.banner-text {
+  font-size: 60px;
+color: #6f6c6c;
+text-align: center;
+    position: relative;
+    margin-top: 28%;
+    left: 23%;
+    display: block;
+}
+
+div.banner-text h1{
+  font-size: 60px;
+  color:#fff;
+  padding: 0px 0 20px 0;
+  margin: 0px;
+  text-align: left;
+}
+
+/*Header end*/
+
+/*Future Accounting*/
+.future-accounting p {
+ font-size: 17px;
+ color: #898989;  
+}
+/*Future Accounting end*/
+
+/*Panel set*/
+
+section.background-rectangle {
+ background: url(../img/background-rectangle.png) no-repeat;
+ background-size: cover;
+ padding: 6% 0;
+}
+
+section.background-rectangle h2 {
+ font-size: 40px;
+ padding: 3% 0;
+}
+
+section.future-accounting {
+    margin: 3% 0px;
+}
+
+.future-accounting p{
+    margin: 6% 0px;
+}
+
+.panel-default{
+    border: 0px !important;
+    background: transparent;
+    box-shadow: none;
+}
+
+.panel-default>.panel-heading {
+    border: 0px !important;
+    background: transparent;
+    box-shadow: none;
+}
+.panel-footer {
+    border: 0px !important;
+    background: transparent;
+}
+
+.panel-body { 
+    padding: 0px;
+    font-weight: 700;
+    font-size: 18px;
+    min-height: 70px;
+}
+.panel-footer { 
+    font-size: 14px;
+}
+
+
+/*Panel set end*/
+
+/*Cards*/
+section.cards {
+    margin: 2% 0;
+}
+
+section.cards h2{
+    margin: 2% 0;
+}
+/*Cards end*/
+
+/*Callout*/
+section.call-out {
+    background-color: #6da23f;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px 0;
+}
+
+section.call-out h3{
+   font-size: 34px;
+}
+
+/*Callout end*/
+
+
+/*Footer*/
+footer {
+ background: url(../img/footer-bg.png) no-repeat;
+ background-size: cover;
+ color: #fff;
+}
+
+div.inner-footer {
+    padding-top: 5%; 
+}
+div.copyright {
+    padding-top: 5%; 
+}
+
+div.button-wrapper {
+    padding-top: 1%; 
+    margin-left: 15%;
+}
+
+ a.button {
+     padding: 10px 50px;
+     color: #fff;
+     margin: 0 5px;
+ }
+ 
+  a.button.enquire {
+      background-color: #887311;
+      border: solid #edb800 1px;
+  }
+   a.button.home {
+      background-color: #606863;
+      border: solid #ffffff 1px;
+  }
+/*Footer end*/
+
+@media screen and (max-width: 531px)  { 
+  
+  .button-wrapper {
+      margin-left: 0% !important;
+      text-align: center;
+  }  
+  .footer-logo {
+      text-align: center;
+  }
+  
+div.banner-text {
+    font-size: 50px;
+    color: #6f6c6c;
+    text-align: center;
+    position: relative;
+    margin-top: 11%;
+    left: 10%;
+    display: block;
+}
+
+div.banner-text h1 {
+    font-size: 40px;
+    color: #fff;
+    padding: 0px 0 20px 0;
+    margin: 0px;
+    text-align: left;
+}
+
+.future-accounting p {
+    margin: 0px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+section.background-rectangle {
+    background: url(../img/background-rectangle.png) no-repeat;
+    background-size: cover;
+    padding: 5% 0;
+}
+
+section.cards h2 {
+    margin: 2% 0;
+    padding: 20px;  
+}
+
+section.call-out {
+    background-color: #6da23f;
+    color: #fff;
+    font-size: 18px;
+    padding: 18px;
+}
+
+section.call-out h3 {
+    font-size: 24px;
+}
+
+.form-wrapper {
+    float: right;
+    margin-top: 14%;
+    margin-bottom: 4%;
+    display: block;
+    max-width: 500px;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+section.background-rectangle h2 {
+    font-size: 30px;
+    padding: 20px;
+}
+
+a.button {
+    padding: 10px 20px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+}
+
+
+@media screen and (max-width: 1253px)  { 
+    
+   a.button {
+    padding: 10px 20px;
+    color: #fff;
+    margin: 0 5px;
+}
+
+div.button-wrapper {
+    padding-top: 1%;
+     margin-left: 0%; 
+}
+}
+
+@media screen and (max-width: 991px)  { 
+    
+ div.banner-text {
+    font-size: 60px;
+    color: #6f6c6c;
+    text-align: center;
+    position: relative;
+    margin-top: 4%;
+    left: 8%;
+    width: 85%;
+    display: block;
+}
+
+.form-row {
+    float: left;
+}
+
+div.inner-footer {
+    padding-top: 5%;
+    text-align: center
+}
+
+}
+

@@ -1,0 +1,146 @@
+/*!
+This is a generated stylesheet
+Written by Steven Jackson - 20 July 2016
+
+IMPORTANT:
+DO NOT EDIT THE STYLESHEET DIRECTLY
+*/ 
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+// Variables
+$font-stack: 'Lato', sans-serif;
+$font-color: #666666;
+$heading-color: #363636;
+$white: #ffffff;
+$black: #000000;
+$testimonial-background-color: #efefef;
+
+// Buttons
+$cta-button-text-color: #00d573;
+$cta-background-color: #ffffff;
+
+$subject-button-text-color: #ffffff;
+$subject-background-color: #2addd0;
+
+// Border radius
+$border-radius: 5px;
+
+// Media query breakpoints
+$break-small: 440px;
+$break-large: 990px;
+$break-custom: 675px;
+$break-xsmall: 330px;
+
+
+// Mixin
+@mixin font-size($font-size) {font-size: $font-size}
+@mixin spacer() {margin: 40px 0;}
+@mixin padding-spacer() {padding: 40px 0;}
+@mixin background-image($filename) {background: url($filename) no-repeat center center;background-size: cover;}
+@mixin button-style($background-color,$text-color,$font-size) {padding: 10px 20px;border-radius: $border-radius;@include bold();font-size: $font-size;background-color: $background-color;color: $text-color;}
+@mixin bold() {font-weight: 700;}
+@mixin clear-panel() {border: 0; background-color: transparent;}
+@mixin wipe-panels(){
+	.panel-default {@include clear-panel; box-shadow:none;}
+	.panel-default>.panel-heading {@include clear-panel;}
+	.panel-body {font-size: 1.2em; color:$black; @include bold;}
+	.panel-footer {@include clear-panel;}
+}
+
+
+// Global Styles
+body {font-family: $font-stack;color: $font-color;}
+h1 {font-size: 4em;color: $white;
+	@media screen and (max-width: $break-custom){@include font-size(2em);}
+}
+h2 {font-size: 2.5em;color: $heading-color; margin: 4% 0; @include bold;}
+h3,h4,h5,h6 {color: $heading-color;}
+p {}
+.row {margin: 0px;}
+
+// Header
+
+header {@include background-image('../img/banner.png');min-height: 885px;
+	@media screen and (max-width: $break-custom){min-height: 550px;}
+	div { &.row 
+		{&:first-child {padding-top: 20px;}}
+		&.banner-row {margin-top: 15%;
+& img {
+@media screen and (max-width: $break-custom){max-width: 300px;}
+	}
+		}}
+
+		a {@include button-style($cta-background-color, $cta-button-text-color, 1.5em);
+			@media screen and (max-width: $break-custom){@include font-size(1em);}
+			&:first-child{color: $black;margin-top: 20px;font-size: 1em;
+				@media screen and (max-width: $break-xsmall){@include button-style($cta-background-color, $black, 0.6em);}
+			}
+
+			> img {padding: 0px 10px 6px;}		
+		}
+	}
+
+// End Header
+
+
+// Section - Features
+
+section#features {@include wipe-panels;
+	div {
+		&.panel-footer {@include font-size(1.2em);}
+		&.panel-body {
+			@media screen and (max-width: $break-large){@include font-size(1.7em);}}
+		}
+	}
+
+// Section - Subjects
+section#subjects {@include background-image('../img/subject-bg.png');min-height: 790px; @include wipe-panels;
+	div { 
+		&.row {&:first-child {margin-bottom: 30px;}}
+		&.panel-body {@include font-size(2em);}
+		a {@include button-style($subject-background-color,$subject-button-text-color,1.5em); padding: 10px 50px; }
+		}
+
+		h2 {
+			@media screen and (max-width: $break-custom){font-size: 2em;}
+		}
+}
+// Section - Adaptive Learningg
+section#adaptive-learning {@include spacer();
+	p {@include font-size(1.5em)}
+	span {@include font-size(1.1em)}
+	h2 {
+		@media screen and (max-width: $break-custom){padding:20px 0;}}
+	}
+
+// Section - Testimonials
+section#testimonial {@include padding-spacer();
+	div {
+		@media screen and (max-width: $break-large){text-align: center;}
+	}
+	background-color: $testimonial-background-color;
+	h2 {margin: 20px 0 20px;}
+	p {@include font-size(1.2em); @include bold();}
+}
+
+// Section - Testimonials
+section#register {@include padding-spacer(); @include background-image('../img/pre-footer-bg.png');min-height: 243px;
+	a {
+		@include button-style($cta-background-color,$cta-button-text-color,2em); padding: 20px 10%;
+		@media screen and (max-width: $break-custom) {@include button-style($cta-background-color,$cta-button-text-color,1.4em); padding: 10px 20px;}
+		@media screen and (max-width: $break-small) {@include button-style($cta-background-color,$cta-button-text-color,1em);}
+		@media screen and (max-width: $break-xsmall) {@include button-style($cta-background-color,$cta-button-text-color,0.7em);}
+	}
+	h2 {color: $white; @include font-size(1.6em); font-weight: normal;margin: 0 0 4% 0;
+		@media screen and (max-width: $break-custom) {margin: 0 0 7%;}
+	}
+}
+
+// Section - Testimonials
+footer {@include padding-spacer();
+	h2 {margin: 0 0 4% 0;}
+	img {
+		@media screen and (max-width: $break-large){padding:20px 0;}}
+}
+

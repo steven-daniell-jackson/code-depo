@@ -1,0 +1,317 @@
+/*!
+This is a generated stylesheet
+Written by Steven Jackson - 20 July 2016
+
+IMPORTANT:
+DO NOT EDIT THE STYLESHEET DIRECTLY
+*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+body {
+  font-family: "Lato", sans-serif;
+  color: #666666;
+}
+@media screen and (max-width: 768px) {
+  body {
+    text-align: center;
+  }
+}
+
+h1 {
+  font-size: 4em;
+  color: #ffffff;
+  margin: 0;
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 2.5em;
+  color: #363636;
+  margin: 4% 0;
+  font-weight: 700;
+}
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+}
+
+h3, h4, h5, h6 {
+  color: #363636;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.row {
+  margin: 0px;
+}
+
+header {
+  background: url("../img/banner.png") no-repeat center center;
+  background-size: cover;
+  min-height: 885px;
+}
+@media screen and (max-width: 675px) {
+  header {
+    min-height: 550px;
+  }
+}
+header div.row:first-child {
+  padding-top: 20px;
+}
+header div.banner-row {
+  margin-top: 15%;
+}
+@media screen and (max-width: 675px) {
+  header div.banner-row img {
+    max-width: 300px;
+  }
+}
+header a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #ffffff;
+  color: #00d573;
+}
+header a.logo {
+  background-color: transparent;
+}
+header a.logo:hover {
+  background-color: transparent;
+}
+header a:hover {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #ffffff;
+  color: #00d573;
+}
+@media screen and (max-width: 675px) {
+  header a {
+    font-size: 1em;
+  }
+}
+header a:first-child {
+  color: #000000;
+  margin-top: 20px;
+  font-size: 1em;
+}
+@media screen and (max-width: 330px) {
+  header a:first-child {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.6em;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+header a > img {
+  padding: 0px 10px 6px;
+}
+header .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+header .video-container iframe, header .video-container object, header .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+section#features .panel-default {
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+section#features .panel-default > .panel-heading {
+  border: 0;
+  background-color: transparent;
+}
+section#features .panel-body {
+  font-size: 1.2em;
+  color: #000000;
+  font-weight: 700;
+}
+section#features .panel-footer {
+  border: 0;
+  background-color: transparent;
+}
+section#features div.panel-footer {
+  font-size: 1.2em;
+}
+@media screen and (max-width: 990px) {
+  section#features div.panel-body {
+    font-size: 1.7em;
+  }
+}
+
+section#subjects {
+  background: url("../img/subject-bg.png") no-repeat center center;
+  background-size: cover;
+  min-height: 790px;
+}
+section#subjects .panel-default {
+  border: 0;
+  background-color: transparent;
+  box-shadow: none;
+}
+section#subjects .panel-default > .panel-heading {
+  border: 0;
+  background-color: transparent;
+}
+section#subjects .panel-body {
+  font-size: 1.2em;
+  color: #000000;
+  font-weight: 700;
+}
+section#subjects .panel-footer {
+  border: 0;
+  background-color: transparent;
+}
+section#subjects div.row:first-child {
+  margin-bottom: 30px;
+}
+section#subjects div.panel-body {
+  font-size: 2em;
+}
+section#subjects div a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.5em;
+  background-color: #2addd0;
+  color: #ffffff;
+  padding: 10px 50px;
+}
+@media screen and (max-width: 675px) {
+  section#subjects h2 {
+    font-size: 2em;
+  }
+}
+
+section#adaptive-learning {
+  margin: 40px 0;
+}
+section#adaptive-learning p {
+  font-size: 1.5em;
+}
+section#adaptive-learning span {
+  font-size: 1.1em;
+}
+@media screen and (max-width: 675px) {
+  section#adaptive-learning h2 {
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  section#adaptive-learning img {
+    width: 100%;
+  }
+}
+
+section#testimonial {
+  padding: 40px 0;
+  background-color: #efefef;
+}
+section#testimonial .img-circle {
+  max-width: 100%;
+}
+@media screen and (max-width: 990px) {
+  section#testimonial div {
+    text-align: center;
+  }
+}
+section#testimonial h2 {
+  margin: 20px 0 20px;
+}
+section#testimonial p {
+  font-size: 1.2em;
+  font-weight: 700;
+}
+
+section#register {
+  padding: 40px 0;
+  background: url("../img/pre-footer-bg.png") no-repeat center center;
+  background-size: cover;
+  min-height: 243px;
+}
+section#register a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 2em;
+  background-color: #ffffff;
+  color: #00d573;
+  padding: 20px 10%;
+}
+@media screen and (max-width: 675px) {
+  section#register a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1.4em;
+    background-color: #ffffff;
+    color: #00d573;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 440px) {
+  section#register a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 1em;
+    background-color: #ffffff;
+    color: #00d573;
+  }
+}
+@media screen and (max-width: 330px) {
+  section#register a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 0.7em;
+    background-color: #ffffff;
+    color: #00d573;
+  }
+}
+section#register h2 {
+  color: #ffffff;
+  font-size: 1.6em;
+  font-weight: normal;
+  margin: 0 0 4% 0;
+}
+@media screen and (max-width: 675px) {
+  section#register h2 {
+    margin: 0 0 7%;
+  }
+}
+
+footer {
+  padding: 40px 0;
+}
+footer h2 {
+  margin: 0 0 4% 0;
+}
+@media screen and (max-width: 990px) {
+  footer img {
+    padding: 20px 0;
+  }
+}
