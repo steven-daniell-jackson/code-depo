@@ -9,7 +9,7 @@
 .card-block {margin-top: 10px;}
 .card-block-btn {margin-top: 10px; padding: 0px 15px;}
 .card-link {background-color: #000; color: #fff; padding: 5px 20px; border: 1px solid #000;}
-.card-img {max-height: 300px;  margin: 0px auto;}
+.card-img {max-height: 280px;  margin: 0px auto;}
 .navbar {display: none;}
 .home-content {display: none;}
 .card-link:hover {
